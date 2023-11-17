@@ -7,22 +7,22 @@ void swap(int *a, int *b) {
     *b = temp;
 }
 
-void generate_permutations(int *data, int start, int end) {
+void generatePermutations(int *data, int start, int end) {
     if (start == end) {
-        // Permütasyonu ekrana yazdır
+        //Print permutation result
         for (int i = 0; i <= end; i++) {
             printf("%d ", data[i]);
         }
         printf("\n");
     } else {
         for (int i = start; i <= end; i++) {
-            // Elemanları yer değiştir
+            // Swapping elements.
             swap(&data[start], &data[i]);
 
-            // Recursive çağrı
-            generate_permutations(data, start + 1, end);
+            //Recursively call generatePermutations with start+1
+            generatePermutations(data, start + 1, end);
 
-            // Yer değiştirme işlemi geri alınır (backtrack)
+            // Backtrack
             swap(&data[start], &data[i]);
         }
     }
@@ -30,21 +30,23 @@ void generate_permutations(int *data, int start, int end) {
 
 int main() {
     int n;
+    int *data;
 
-    // Kullanıcıdan dizi boyutunu al
-    printf("Dizi boyutunu girin: ");
+    printf("Enter size of the array: ");
     scanf("%d", &n);
 
-    // Kullanıcıdan verileri al
-    int data[n];
-    printf("Dizi elemanlarını girin: ");
+    data = (int *)malloc(n*sizeof(int));
+
+    printf("Enter the array elements: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &data[i]);
     }
 
-    // Permütasyonları oluştur ve ekrana yazdır
-    printf("Permütasyonlar:\n");
-    generate_permutations(data, 0, n - 1);
+    //Permutation process and printing result.
+    printf("Permutations: \n");
+    generatePermutations(data, 0, n - 1);
+
+    free(data);
 
     return 0;
 }
