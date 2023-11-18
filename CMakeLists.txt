@@ -7,4 +7,5 @@ add_library(DataStructuresSamples library.c
         FibonacciSequence.c
         PermutationProblem.c
         DiagonalMatrix.c
-        FibonacciRecursive.c)
+        FibonacciRecursive.c
+        CircularQueue.c)

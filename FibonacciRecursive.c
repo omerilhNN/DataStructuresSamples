@@ -12,7 +12,7 @@ int recursiveFibonacci(int n){
 int main(){
     int n;
 
-    printf("Enter the number of terms that you want the see in the Fibonacci sequence:");
+    printf("Enter the number of terms that you want to see in the Fibonacci sequence:");
     scanf("%d",&n);
 
     printf("Fibonaci series for %d elements. \n",n);

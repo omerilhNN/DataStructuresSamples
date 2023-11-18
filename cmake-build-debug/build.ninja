@@ -79,6 +79,12 @@ build CMakeFiles/DataStructuresSamples.dir/FibonacciRecursive.c.obj: C_COMPILER_
   OBJECT_DIR = CMakeFiles\DataStructuresSamples.dir
   OBJECT_FILE_DIR = CMakeFiles\DataStructuresSamples.dir
 
+build CMakeFiles/DataStructuresSamples.dir/Queue.c.obj: C_COMPILER__DataStructuresSamples_unscanned_Debug C$:/Users/karak/CLionProjects/DataStructuresSamples/Queue.c || cmake_object_order_depends_target_DataStructuresSamples
+  DEP_FILE = CMakeFiles\DataStructuresSamples.dir\Queue.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\DataStructuresSamples.dir
+  OBJECT_FILE_DIR = CMakeFiles\DataStructuresSamples.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target DataStructuresSamples
@@ -87,7 +93,7 @@ build CMakeFiles/DataStructuresSamples.dir/FibonacciRecursive.c.obj: C_COMPILER_
 #############################################
 # Link the static library libDataStructuresSamples.a
 
-build libDataStructuresSamples.a: C_STATIC_LIBRARY_LINKER__DataStructuresSamples_Debug CMakeFiles/DataStructuresSamples.dir/library.c.obj CMakeFiles/DataStructuresSamples.dir/FibonacciSequence.c.obj CMakeFiles/DataStructuresSamples.dir/PermutationProblem.c.obj CMakeFiles/DataStructuresSamples.dir/DiagonalMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/FibonacciRecursive.c.obj
+build libDataStructuresSamples.a: C_STATIC_LIBRARY_LINKER__DataStructuresSamples_Debug CMakeFiles/DataStructuresSamples.dir/library.c.obj CMakeFiles/DataStructuresSamples.dir/FibonacciSequence.c.obj CMakeFiles/DataStructuresSamples.dir/PermutationProblem.c.obj CMakeFiles/DataStructuresSamples.dir/DiagonalMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/FibonacciRecursive.c.obj CMakeFiles/DataStructuresSamples.dir/Queue.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\DataStructuresSamples.dir
   POST_BUILD = cd .
