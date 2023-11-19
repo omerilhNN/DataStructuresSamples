@@ -39,7 +39,7 @@ int dequeue(struct Queue* queue){
 }
 void display(struct Queue* queue){
     int i;
-    for(i =0; i<(queue->rear); i++){
+    for(i =0; i<=(queue->rear); i++){
         printf("%d ",queue->items[i]);
     }
     printf("\n");
