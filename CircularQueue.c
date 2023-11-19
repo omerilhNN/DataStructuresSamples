@@ -30,7 +30,8 @@ void enqueue(struct Queue *queue,int value){
         if(isEmpty(queue)){
             queue->front = 0;
         }
-        queue-> rear = (queue-> rear +1) % MAX_SIZE;
+        //If it is not empty then do these.
+        queue-> rear = (queue-> rear +1) % MAX_SIZE; //Increment rear by 1
         queue->elements[queue->rear] = value;
         printf("%d enqueued to array \n",value);
     }

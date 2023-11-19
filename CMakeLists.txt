@@ -8,4 +8,5 @@ add_library(DataStructuresSamples library.c
         PermutationProblem.c
         DiagonalMatrix.c
         FibonacciRecursive.c
-        CircularQueue.c)
+        CircularQueue.c
+        StandardQueue.c)
