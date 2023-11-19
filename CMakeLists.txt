@@ -9,4 +9,5 @@ add_library(DataStructuresSamples library.c
         DiagonalMatrix.c
         FibonacciRecursive.c
         CircularQueue.c
-        StandardQueue.c)
+        StandardQueue.c
+        Stack.c)
