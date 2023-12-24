@@ -11,4 +11,8 @@ add_library(DataStructuresSamples library.c
         CircularQueue.c
         StandardQueue.c
         Stack.c
-        BandMatrix.c)
+        BandMatrix.c
+        Test.c
+        LowerTriangularMatrix.c
+        UpperTriangularMatrix.c
+        LinkedList.c)

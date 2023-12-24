@@ -79,7 +79,7 @@ void printQueue(struct Queue *firstQueue, struct Queue *secondQueue,int queueNum
         printf("QUEUE FIRST: ");
         for(int i = firstQueue->front; i< firstQueue-rear; i++){
             printf("%d",queue[i]);
-        }
+      }
     }else if(queueNum == 2){
         printf("QUEUE SECOND: ");
         for(int j = secondQueue->front; j < secondQueue->rear; j++){
