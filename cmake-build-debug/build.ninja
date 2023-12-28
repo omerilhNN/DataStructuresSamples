@@ -127,6 +127,18 @@ build CMakeFiles/DataStructuresSamples.dir/LinkedList.c.obj: C_COMPILER__DataStr
   OBJECT_DIR = CMakeFiles\DataStructuresSamples.dir
   OBJECT_FILE_DIR = CMakeFiles\DataStructuresSamples.dir
 
+build CMakeFiles/DataStructuresSamples.dir/DoublyLinkedList.c.obj: C_COMPILER__DataStructuresSamples_unscanned_Debug C$:/Users/karak/CLionProjects/DataStructuresSamples/DoublyLinkedList.c || cmake_object_order_depends_target_DataStructuresSamples
+  DEP_FILE = CMakeFiles\DataStructuresSamples.dir\DoublyLinkedList.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\DataStructuresSamples.dir
+  OBJECT_FILE_DIR = CMakeFiles\DataStructuresSamples.dir
+
+build CMakeFiles/DataStructuresSamples.dir/LinkedListStackImpl.c.obj: C_COMPILER__DataStructuresSamples_unscanned_Debug C$:/Users/karak/CLionProjects/DataStructuresSamples/LinkedListStackImpl.c || cmake_object_order_depends_target_DataStructuresSamples
+  DEP_FILE = CMakeFiles\DataStructuresSamples.dir\LinkedListStackImpl.c.obj.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\DataStructuresSamples.dir
+  OBJECT_FILE_DIR = CMakeFiles\DataStructuresSamples.dir
+
 
 # =============================================================================
 # Link build statements for STATIC_LIBRARY target DataStructuresSamples
@@ -135,7 +147,7 @@ build CMakeFiles/DataStructuresSamples.dir/LinkedList.c.obj: C_COMPILER__DataStr
 #############################################
 # Link the static library libDataStructuresSamples.a
 
-build libDataStructuresSamples.a: C_STATIC_LIBRARY_LINKER__DataStructuresSamples_Debug CMakeFiles/DataStructuresSamples.dir/library.c.obj CMakeFiles/DataStructuresSamples.dir/FibonacciSequence.c.obj CMakeFiles/DataStructuresSamples.dir/PermutationProblem.c.obj CMakeFiles/DataStructuresSamples.dir/DiagonalMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/FibonacciRecursive.c.obj CMakeFiles/DataStructuresSamples.dir/CircularQueue.c.obj CMakeFiles/DataStructuresSamples.dir/StandardQueue.c.obj CMakeFiles/DataStructuresSamples.dir/Stack.c.obj CMakeFiles/DataStructuresSamples.dir/BandMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/Test.c.obj CMakeFiles/DataStructuresSamples.dir/LowerTriangularMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/UpperTriangularMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/LinkedList.c.obj
+build libDataStructuresSamples.a: C_STATIC_LIBRARY_LINKER__DataStructuresSamples_Debug CMakeFiles/DataStructuresSamples.dir/library.c.obj CMakeFiles/DataStructuresSamples.dir/FibonacciSequence.c.obj CMakeFiles/DataStructuresSamples.dir/PermutationProblem.c.obj CMakeFiles/DataStructuresSamples.dir/DiagonalMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/FibonacciRecursive.c.obj CMakeFiles/DataStructuresSamples.dir/CircularQueue.c.obj CMakeFiles/DataStructuresSamples.dir/StandardQueue.c.obj CMakeFiles/DataStructuresSamples.dir/Stack.c.obj CMakeFiles/DataStructuresSamples.dir/BandMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/Test.c.obj CMakeFiles/DataStructuresSamples.dir/LowerTriangularMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/UpperTriangularMatrix.c.obj CMakeFiles/DataStructuresSamples.dir/LinkedList.c.obj CMakeFiles/DataStructuresSamples.dir/DoublyLinkedList.c.obj CMakeFiles/DataStructuresSamples.dir/LinkedListStackImpl.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = CMakeFiles\DataStructuresSamples.dir
   POST_BUILD = cd .

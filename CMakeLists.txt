@@ -15,4 +15,6 @@ add_library(DataStructuresSamples library.c
         Test.c
         LowerTriangularMatrix.c
         UpperTriangularMatrix.c
-        LinkedList.c)
+        LinkedList.c
+        DoublyLinkedList.c
+        LinkedListStackImpl.c)

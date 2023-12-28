@@ -6,17 +6,7 @@ struct Node{
     struct Node *link;
 };
 
-int main(){
-    struct Node *head = (struct Node*)malloc(sizeof(struct Node));
-    head->data = 45;
-    head->link = NULL;
 
-    struct Node *ptr =(struct Node*)malloc(sizeof(struct Node));
-    ptr->data = 98;
-    ptr->link =NULL;
-
-    head->link = ptr;
-}
 
 void countOfNodes(struct Node *head){
     int count = 0;
@@ -168,7 +158,7 @@ struct Node* deleteSingleLinkedList(struct Node* head){
 // !! REVERSE !!
 struct Node* reverse(struct Node *head){
     struct Node *prev = NULL; //temp => prev node
-    struct Node *next = NULL;//temp2 => next node 
+    struct Node *next = NULL;//temp2 => next node
 
     while(head !=NULL){
         next = head->link; //next
@@ -178,4 +168,15 @@ struct Node* reverse(struct Node *head){
     }
     head = prev;
     return head;
+}
+int main(){
+    struct Node *head = (struct Node*)malloc(sizeof(struct Node));
+    head->data = 45;
+    head->link = NULL;
+
+    struct Node *ptr =(struct Node*)malloc(sizeof(struct Node));
+    ptr->data = 98;
+    ptr->link =NULL;
+
+    head->link = ptr;
 }
