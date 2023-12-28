@@ -84,3 +84,98 @@ void addAtCertainPosition(struct Node *head,int data,int position){
     ptr2->link = ptr->link;
     ptr->link = ptr2;
 }
+
+struct Node* deleteFirst(struct Node *head){
+    if(head == NULL)
+        printf("List is empty");
+    else{
+        struct Node *temp = head;
+        head = head->link;
+        free(temp);
+        temp = NULL;
+    }
+    return head;
+}
+//!! TODO:IMPORTANT !!
+struct Node* deleteLastNode(struct Node* head){
+    if(head ==NULL)
+        printf("List is empty");
+    else if(head->link == NULL){
+        free(head);
+        head = NULL;
+    }
+    else{
+        struct Node* temp = head;
+        struct Node* temp2 = head;
+        while(temp->link != NULL){
+            temp2 = temp;
+            temp = temp->link;
+        }
+        //-> Break the chain within the last node
+        temp2->link = NULL;
+        free(temp);
+        temp = NULL;
+    }
+    return head;
+}
+void deleteLastNodeUsingSinglePointer(struct Node* head){
+    if(head == NULL) printf("List is empty");
+    else if(head ->link == NULL) {
+        free(head);
+        head = NULL;
+    }
+    else{
+        struct Node* temp = head;
+        while(temp->link->link!=NULL){
+            temp = temp->link;
+        }
+        free(temp->link);
+        temp->link = NULL;
+    }
+}
+void deleteAtCertainPosition(struct Node **head,int position){
+    //in Main func -> deleteAtCertainPosition(&HEAD) -> give '*head' address.
+    struct Node* current = *head;
+    struct Node* previous = *head;
+    if(*head == NULL)
+        printf("List is empty");
+    else if(position == 1){
+        //Delete from the beginning
+        *head = current -> link;
+        free(current);
+        current = NULL;
+    }
+    else{
+        while(position !=1){
+            previous = current;
+            current = current->link;
+            position--;
+        }
+        previous -> link = current->link;
+        free(current);
+        current = NULL;
+    }
+}
+struct Node* deleteSingleLinkedList(struct Node* head){
+    struct Node* temp = head;
+    while(temp != NULL){
+        temp = temp->link;
+        free(head);
+        head = temp;
+    }
+    return head;
+}
+// !! REVERSE !!
+struct Node* reverse(struct Node *head){
+    struct Node *prev = NULL; //temp => prev node
+    struct Node *next = NULL;//temp2 => next node 
+
+    while(head !=NULL){
+        next = head->link; //next
+        head->link = prev;
+        prev = head;
+        head = next;
+    }
+    head = prev;
+    return head;
+}
