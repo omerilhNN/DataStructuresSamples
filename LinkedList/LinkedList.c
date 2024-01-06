@@ -119,7 +119,7 @@ void deleteLastNodeUsingSinglePointer(struct Node* head){
         while(temp->link->link!=NULL){
             temp = temp->link;
         }
-        free(temp->link);
+        free(temp->link)v
         temp->link = NULL;
     }
 }

@@ -70,7 +70,9 @@
 				17,
 				18,
 				19,
-				20
+				20,
+				21,
+				22
 			]
 		}
 	],
@@ -108,7 +110,9 @@
 				17,
 				18,
 				19,
-				20
+				20,
+				21,
+				22
 			]
 		}
 	],
@@ -195,7 +199,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "DoublyLinkedList.c",
+			"path" : "LinkedList/DoublyLinkedList.c",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -238,6 +242,18 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "LinkedList/CircularLinkedList.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "Trees/BinarySearchTree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "FinalPractices/StackLL.c",
 			"sourceGroupIndex" : 0
 		}
 	],

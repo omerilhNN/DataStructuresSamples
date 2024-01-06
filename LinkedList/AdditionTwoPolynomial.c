@@ -46,8 +46,8 @@ struct node* create(struct node* head){
 
 }
 void polyAdd(struct node *head1, struct node *head2) {
-    struct node* ptr1=NULL;
-    struct node* ptr2=NULL;
+    struct node* ptr1= head1;
+    struct node* ptr2= head2;
     struct node* head3 = NULL;
 
     while(ptr1!=NULL && ptr2!=NULL){

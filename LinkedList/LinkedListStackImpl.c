@@ -5,6 +5,7 @@ struct node{
     struct node* link;
     int data;
 } *top = NULL;
+
 void push(int data){
     struct node* newNode =(struct node*)malloc(sizeof(struct node));
     if(newNode == NULL){ //it is NULL when requested memory can't be allocated

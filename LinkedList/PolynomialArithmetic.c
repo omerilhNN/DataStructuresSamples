@@ -7,10 +7,6 @@ struct node{
     struct node *link;
 };
 
-
-
-
-
 struct node *insert(struct node *head, float coefficient, int expo) {
     struct node* temp;
     struct node* newP = (struct node*)malloc(sizeof (struct node));

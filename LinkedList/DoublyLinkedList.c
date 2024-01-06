@@ -55,11 +55,17 @@ struct node* addAfterGivenPos(struct node* head,int data,int position){
     }
     //temp is previous position and temp2 is next position of newP
     //place newP in between temp and temp2
-    temp2 = temp->next;
-    temp->next = newP;
-    temp2->prev = newP;
-    newP->next = temp2;
-    newP->prev = temp;
+    if(temp->next == NULL){
+        temp->next = newP;
+        newP->prev = temp;
+    }
+    else{
+        temp2 = temp->next;
+        temp->next = newP;
+        temp2->prev = newP;
+        newP->next = temp2;
+        newP->prev = temp;
+    }
     return head;
 }
 struct node* addBeforeGivenPos(struct node* head, int data, int pos){

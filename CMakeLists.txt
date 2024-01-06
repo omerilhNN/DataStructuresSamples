@@ -16,11 +16,13 @@ add_library(DataStructuresSamples library.c
         LowerTriangularMatrix.c
         UpperTriangularMatrix.c
         LinkedList/LinkedList.c
-        DoublyLinkedList.c
+        LinkedList/DoublyLinkedList.c
         LinkedList/LinkedListStackImpl.c
         ReverseStringStack.c
         LinkedList/ReverseLinkedListUsingStack.c
         LinkedList/LinkedListQueueImpl.c
         LinkedList/PolynomialArithmetic.c
         LinkedList/AdditionTwoPolynomial.c
-        LinkedList/CircularLinkedList.c)
+        LinkedList/CircularLinkedList.c
+        Trees/BinarySearchTree.c
+        FinalPractices/StackLL.c)
