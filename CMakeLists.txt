@@ -25,4 +25,7 @@ add_library(DataStructuresSamples library.c
         LinkedList/AdditionTwoPolynomial.c
         LinkedList/CircularLinkedList.c
         Trees/BinarySearchTree.c
-        FinalPractices/StackLL.c)
+        FinalPractices/StackLL.c
+        FinalPractices/SumDigits.c
+        FinalPractices/PrintLevelBST.c
+        FinalPractices/ReverseStringUsingStack.c)
