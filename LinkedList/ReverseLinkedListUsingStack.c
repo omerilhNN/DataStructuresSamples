@@ -42,6 +42,19 @@ struct Node* pop(struct Stack* stack) {
     temp->next = NULL;
     return temp;
 }
+int popValue(struct Stack* stack){
+    if(isEmpty(stack))
+    {
+        printf("Stack underflow");
+        return -1;
+    }
+    struct Node* temp = stack->top;
+    int poppedData = temp->data;
+    stack->top = stack->top->next;
+    free(temp);
+
+    return poppedData;
+}
 
 // Function to reverse a linked list using a stack
 void reverseLinkedList(struct Node** head) {

@@ -10,12 +10,10 @@ void printLevel(struct node* root, int number, int level) {
     if (root == NULL) {
         return; // Base case: reached the end of the tree
     }
-
     if (root->value == number) {
         printf("%d\n", level); // Print the level if the node is found
         return;
     }
-
     // Recursively search in the left and right subtrees
     printLevel(root->left, number, level + 1);
     printLevel(root->right, number, level + 1);

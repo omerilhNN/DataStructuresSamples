@@ -39,7 +39,7 @@ char pop(struct Stack *stack) {
 }
 
 // Function to reverse a string using a stack
-void reverseString(struct Stack* stack,char input[]) {
+void reverseString(struct Stack* stack,char *input) {
     // Push each character onto the stack
     for (int i = 0; i < strlen(input); i++) {
         push(stack, input[i]);
@@ -55,7 +55,7 @@ int main() {
     char originalString[] = "Hello, World!";
     struct Stack* stack = (struct Stack*)malloc(sizeof(struct Stack));
     initialize(stack);
-    
+
     printf("Original String: %s\n", originalString);
 
     // Reverse the string

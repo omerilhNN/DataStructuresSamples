@@ -9,7 +9,7 @@ struct BstNode{
 };
 struct BstNode* root;
 
-struct BstNode* getNewNode(int data){
+struct BstNode* createNewNode(int data){
     struct BstNode* newNode = (struct BstNode*) malloc(sizeof (struct BstNode));
     newNode->data  = data;
     newNode->left = newNode->right = NULL;
@@ -18,7 +18,7 @@ struct BstNode* getNewNode(int data){
 //Insertion for Binary Search tree.
 struct BstNode* insert(struct BstNode* root,int data){
     if(root == NULL){
-        root = getNewNode(data);
+        root = createNewNode(data);
         return root;
     }
     else if(data <= root->data){

@@ -90,6 +90,22 @@ struct node* addBeforeGivenPos(struct node* head, int data, int pos){
     }
     return head;
 }
+struct node* reverse(struct node* head){
+    struct node* ptr1 = head;
+    struct node* ptr2 = ptr1->next;
+
+    ptr1->next  = NULL; //Make that head node behave like last node.
+    ptr1->prev = ptr2;
+
+    while(ptr2 != NULL){
+        ptr2->prev = ptr2->next;
+        ptr2->next = ptr1;
+        ptr1 = ptr2;
+        ptr2 = ptr2->prev;
+    }
+    head = ptr1;
+    return head;
+}
 
 int main() {
     struct node *head = NULL;
