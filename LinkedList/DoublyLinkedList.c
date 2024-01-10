@@ -104,7 +104,9 @@ struct node* reverse(struct node* head){
         ptr2 = ptr2->prev;
     }
     head = ptr1;
+
     return head;
+
 }
 
 int main() {

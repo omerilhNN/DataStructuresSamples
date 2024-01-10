@@ -28,4 +28,5 @@ add_library(DataStructuresSamples library.c
         FinalPractices/StackLL.c
         FinalPractices/SumDigits.c
         FinalPractices/PrintLevelBST.c
-        FinalPractices/ReverseStringUsingStack.c)
+        FinalPractices/ReverseStringUsingStack.c
+        LinkedList/CircularDoublyLinkedList.c)
