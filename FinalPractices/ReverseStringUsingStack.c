@@ -31,7 +31,7 @@ void push(struct Stack *stack, char item) {
 
 // Function to pop a character from the stack
 char pop(struct Stack *stack) {
-    if (isEmpty(stack)) {
+    if (stack->top == -1) {
         printf("Stack Underflow\n");
         return '\0';
     }

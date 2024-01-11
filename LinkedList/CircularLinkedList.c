@@ -27,7 +27,7 @@ struct node* addAtEnd(struct node* tail, int data){
 
     newP->next = tail->next;
     tail->next = newP;
-    tail = tail->next;
+    tail = newP;
     return tail;
 }
 //there is traversing list process so -> O(N) time complexity
