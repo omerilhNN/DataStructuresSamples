@@ -35,7 +35,22 @@ void addToEnd(struct Node *head,int data){
     }
     ptr->link = temp;
 }
+struct Node* addtoend(struct Node* head,int data){
+    struct Node* ptr;
+    struct Node* temp =  (struct Node*)malloc(sizeof(struct Node));
+    temp->data = data;
+    temp->link = NULL;
 
+    ptr = head;
+    while(ptr->link !=NULL){
+        ptr = ptr->link;
+    }
+
+    ptr->link = temp;
+    return head;
+
+
+}
 //adding to beginning with return type of Node*
 struct Node* addToBeginning(struct Node *head,int data){
     struct Node *ptr =(struct Node*)malloc(sizeof(struct Node));

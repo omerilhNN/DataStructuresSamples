@@ -56,6 +56,95 @@ int findMin(struct BstNode* root){
     return current->data;
 
 }
+void delete(int key, struct BstNode **leaf)
+{
+    if( *leaf == 0 )
+        return;
+    else if( key == (*leaf)->data )
+        delete(key,&(*leaf));
+    else if( key < (*leaf)->data )
+        delete(key, &(*leaf)->left);
+    else if( key > (*leaf)->data )
+        delete(key, &(*leaf)->right);
+}
+struct BstNode* deleteRecursive(struct BstNode* root, int key) {
+    if (root == NULL)
+        return root;
+
+    //for traversing until reaching the exact node that has the key value.
+    if (key < root->data)
+        root->left = deleteRecursive(root->left, key);
+    else if (key > root->data)
+        root->right = deleteRecursive(root->right, key);
+    //Deletion process
+    else {
+        // 1 child or NO child
+        if (root->left == NULL) {
+            struct BstNode* temp = root->right;
+            free(root);
+            return temp;
+        } else if (root->right == NULL) {
+            struct BstNode* temp = root->left;
+            free(root);
+            return temp;
+        }
+
+        // İki çocuklu durum: Sağ alt ağacın en küçük düğümünü bul
+        struct BstNode* temp = root->right;
+        while (temp->left != NULL)
+            temp = temp->left;
+
+        root->data = temp->data;
+
+        root->right = deleteRecursive(root->right, temp->data);
+    }
+
+    return root;
+}
+
+int processLeftMost(struct BstNode **leaf) {
+    if((*leaf)->left == NULL){
+        int key = (*leaf)->data;
+        struct BstNode* deleted = *leaf;
+        *leaf = (*leaf)->right;
+        deleted->right = NULL;
+        free(deleted);
+        return key;
+    }
+    else {
+        return processLeftMost((*leaf)->left);
+    }
+}
+
+void deleteNode(struct BstNode **leaf){
+    struct BstNode* deleted;
+
+    //Only 1 node on the tree.
+    if((*leaf)->left == NULL && (*leaf)->right == NULL){
+        free(*leaf);
+        *leaf = NULL;
+    }
+    //NO left child
+    else if((*leaf)->left == NULL){
+        deleted = *leaf;
+        *leaf = (*leaf)->right;
+        deleted->right = NULL;
+        free(deleted);
+    }
+    //NO Right child.
+    else if((*leaf)->right == NULL){
+        deleted = *leaf;
+        *leaf = (*leaf)->left;
+        deleted->left = NULL;
+        free(deleted);
+    }
+    //TWO children
+    else{
+        (*leaf)->data = processLeftMost((*leaf)->right);
+    }
+}
+
+
 
 int main(){
     struct BstNode* root = NULL;

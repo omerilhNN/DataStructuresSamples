@@ -75,7 +75,7 @@ struct node* deleteFirst(struct node* tail){
     return tail;
 }
 struct node* deleteLast(struct node* tail){
-    struct node* temp;
+    struct node *temp = NULL;
     if(tail == NULL){
         return tail;
     }
