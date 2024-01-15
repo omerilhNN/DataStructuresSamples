@@ -81,8 +81,7 @@ void addAtCertainPosition(struct Node *head,int data,int position){
     ptr2->data = data;
     ptr2->link = NULL;
 
-    position--;//you can delete here if you change while condition 'position != 2'
-    while(position!=1){
+    while(position!=2){
         ptr = ptr->link;
         position--;
     }

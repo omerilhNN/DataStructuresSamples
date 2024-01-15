@@ -31,7 +31,7 @@ struct BstNode* insert(struct BstNode* root,int data){
 bool Search(struct BstNode* root,int data){
     if(root==NULL) return false;
     else if(root->data == data) return true; // if it is the number that you search
-    else if(data <= root->data) return Search(root->left,data); // if data is lesser than the root's data variable then search the left part.
+    else if(data < root->data) return Search(root->left,data); // if data is lesser than the root's data variable then search the left part.
     else return Search(root->right,data);
 
 }

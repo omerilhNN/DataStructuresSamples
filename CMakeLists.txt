@@ -31,4 +31,5 @@ add_library(DataStructuresSamples library.c
         FinalPractices/ReverseStringUsingStack.c
         LinkedList/CircularDoublyLinkedList.c
         LinkedList/Recursion_ReverseLinkedList.c
-        FinalPractices/MultipleStackImplLL.c)
+        FinalPractices/MultipleStackImplLL.c
+        LinkedList/SortLinkedList.c)

@@ -79,7 +79,7 @@ struct node* deleteLast(struct node* tail){
     if(tail == NULL){
         return tail;
     }
-    if(temp == tail){
+    if(temp == tail){// There is only 1 node in the LL.
         free(tail);
         tail = NULL;
         return tail;
