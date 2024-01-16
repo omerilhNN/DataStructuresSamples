@@ -32,4 +32,5 @@ add_library(DataStructuresSamples library.c
         LinkedList/CircularDoublyLinkedList.c
         LinkedList/Recursion_ReverseLinkedList.c
         FinalPractices/MultipleStackImplLL.c
-        LinkedList/SortLinkedList.c)
+        LinkedList/SortLinkedList.c
+        LinkedList/RemoveDuplicates.c)
